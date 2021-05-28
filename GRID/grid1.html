@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        
+      }
+      .items {
+      
+        border: 2px solid white;
+        background-color: yellow;
+       
+       grid-gap: 20px;
+      }
+      #one {
+        height: 800px;
+      }
+      #two {
+        height: 400px;
+        grid-row-start: 2;
+      }
+      #three {
+        height: 266.6px;
+      }
+      #four {
+        height: 200px;
+      }
+      #six {
+        height: 131.66px;
+      }
+      #tw {
+        height: 63.66px;
+      }
+      .set1{
+       grid-template-rows: 1fr 1fr;
+      }
+      .set2{
+       grid-template-rows: repeat(3,1fr);
+       grid-gap:20px;
+      }
+      .set3{
+       grid-template-rows: repeat(4,1fr);
+       grid-gap:20px;
+      }
+      .set4{
+       grid-template-rows: repeat(6,1fr);
+       grid-gap:20px;
+      }
+      .set5{
+       grid-template-rows: repeat(12,1fr);
+       grid-gap:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items" id="one">dabba 1</div>
+      <div class="set1">
+      <div class="items"id="two">dabba 2</div>
+      <div class="items" id="two">dabba 3</div></div>
+      <div class="set2">
+      <div class="items" id="three">dabba 4</div>
+      <div class="items" id="three">dabba 5</div>
+      <div class="items" id="three">dabba 6</div></div>
+      <div class="set3">
+      <div class="items"id="four">dabba 7</div>
+      <div class="items" id="four">dabba 8</div>
+      <div class="items" id="four">dabba 9</div>
+      <div class="items" id="four">dabba 10</div></div>
+      <div class="set4">
+
+      <div class="items"id="six">dabba 11</div>
+      <div class="items" id="six">dabba 12</div>
+      <div class="items" id="six">dabba 13</div>
+      <div class="items" id="six">dabba 14</div>
+      <div class="items" id="six">dabba 15</div>
+      <div class="items" id="six">dabba 16</div></div>
+      <div class="set5">
+      <div class="items" id="tw">dabba 17</div>
+      <div class="items" id="tw">dabba 18</div>
+      <div class="items" id="tw">dabba 19</div>
+      <div class="items" id="tw">dabba 20</div>
+      <div class="items" id="tw">dabba 21</div>
+      <div class="items" id="tw">dabba 22</div>
+      <div class="items" id="tw">dabba 23</div>
+      <div class="items" id="tw">dabba 24</div>
+      <div class="items" id="tw">dabba 25</div>
+      <div class="items" id="tw">dabba 26</div>
+      <div class="items" id="tw">dabba 27</div>
+      <div class="items" id="tw">dabba 28</div></div>
+    </div>
+  </body>
+</html>

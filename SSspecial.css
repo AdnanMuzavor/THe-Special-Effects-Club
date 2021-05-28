@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(12, 11, 11);
+}
+
+.image,.image-card{
+    width: 500px;
+    height: 300px;
+   margin: 100px;
+   -webkit-box-reflect: below 5px linear-gradient(transparent,transparent,rgba(0,0,0,0.3));
+}
+
+.content{
+    justify-content: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 0px;
+    align-items: center;
+   display: flex;
+    border: 2px solid rgb(252, 252, 252);
+    background-color: rgb(252, 252, 252);
+    color:rgb(252, 252, 252);
+    width: 500px;
+    height: 301px;
+    transition: all 0.3s;
+    transform: translateY(-201%);
+    opacity: 0;
+}
+.image-card:hover .content{
+transition: all 0.8s;
+opacity: 0.8;
+color: red;
+border: 2px solid blue;
+    background-color: yellow;
+    -webkit-box-reflect: below 5px linear-gradient(transparent,transparent,rgba(0,0,0,0.3));
+    transform: translateY(-135%);
+}
+.content:hover{
+animation-name: hello2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes hello2 {
+
+0%{
+  
+  
+   background-color: blueviolet;
+   
+}
+50%{
+   
+   background-color: blue;
+   
+}
+100%{
+   
+  background-color: brown;
+   
+}
+}
+.content:hover h2{
+  transform: scale(2);
+  padding-left: 50px;
+
+  animation-name: hello;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes hello {
+
+  0%{
+    
+      color: rgb(255, 0, 0);
+     
+     
+  }
+  50%{
+      color: rgb(224, 68, 6);
+     
+     
+  }
+  100%{
+      color: rgb(255, 251, 13);
+    
+     
+  }
+}
+.content:hover p{
+  transform: translate(-100px,30px);
+  padding-left: 30px;
+  padding-right: 30px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title> Background Image Zoom On Scroll</title>
+
+<!-- Embedding poppins font from google fonts -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2? family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="S2.css">
+<style>
+
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<h1 class="logo">Logo</hl>
+
+<ul>
+
+<li><a href="#" class="active">home</a></li>
+
+<li><a href="#">about</a></li>
+
+<li><a href="#">services</a></li>
+
+<li><a href="#">gallery</a></li>
+
+<li><a href="#">contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="intro-content">
+
+<hl>Hey, i am <span class="highlight">gill bates</span></hl> <a href="new.html" class="btn">See My Work</a>
+
+</div>
+
+</header>
+
+<section class="random-section"> <hl>Just Another Section</h1> </section>
+
+<script>
+
+//SEE IN JSON ON YOUR PHONE
+ let JSONOB={
+name:"Harry",
+salary:1000,
+value:2
+}
+console.log(JSONOB);
+
+//CONVERTING JSON OBJECT INTO STRING
+let myJSON_string=JSON.stringify(JSONOB);
+console.log(myJSON_string);
+
+//NOW OUR OBJECT IS CONVERTED INTO STRING AND WHATEVER CHNAGES WE WANT WE CAN DO IN IT
+
+myJSON_string=myJSON_string.replace("Harry","Larry");
+
+//AFTER MAING REQUIRED CHANGES CONVERT YOUR STRING BACK TO JSONOBJ
+
+newJSONobj=JSON.parse(myJSON_string);
+console.log(newJSONobj);
+
+</script>
+
+
+</body>
+
+</html>

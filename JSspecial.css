@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 120vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left,rgb(14, 12, 12),rgb(44, 44, 134));
+}
+
+img{
+    width: 500px;
+    height: 300px;
+}
+.content{
+    width: 500px;
+    height: 300px;
+    
+}
+.butti{
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    padding-left: 200px;
+    padding-right: 230px;
+    color: red;
+    background: linear-gradient(to right, rgb(213, 1, 255),purple);
+    transform: translateY(-108%);
+transition: all 3s;
+}
+
+.butti:hover{
+    background: linear-gradient(to right,purple ,rgb(213, 1, 255));
+}  
+.poems{
+    width: 500px;
+    height: 300px;
+    
+}
+h1{
+    text-align: center;
+    text-shadow: 1px 1.2px red;
+    color: maroon;
+    background-color: yellow;
+    transition: all 2s;
+    transform: translateY(-100%);
+}
+h1:hover{
+    transform: skew(2);
+    background: maroon;
+    color: yellow;
+}
+#yourps{
+    display: none;
+    transform: translateY(-10%);
+    background: linear-gradient( to left, rgb(255, 166, 0),yellow);
+    padding: 5px;
+    margin: 5px;
+   
+}
+#yourps:hover{
+background: linear-gradient(to right,yellow,rgb(201, 87, 87));
+animation-name:ani ;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+
+}
+#yourps:hover h1{
+    transform: translateY(50%);
+}
+@keyframes ani {
+    0%{
+        background: linear-gradient(to right,rgb(81, 255, 0),rgb(2, 166, 241));
+       
+    }
+    25%{
+        background: linear-gradient(to right,rgb(252, 252, 0),rgb(255, 0, 0));
+    }
+    50%{
+        background: linear-gradient(to right,rgb(255, 145, 0),rgb(201, 87, 87));
+    }
+    75%{
+        background: linear-gradient(to right,rgb(248, 2, 215),rgb(234, 0, 255));
+    }
+    100%{
+        background: linear-gradient(to right,rgb(116, 0, 248),rgb(80, 3, 3));
+    }
+}
+.contentL h1,.contentR h1{
+    transform: translateY(-8%);
+}
+.contentL,.contentR,.contentT{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    border: 2px solid red;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contentL{
+    transform: translateY(-101%);
+    transition: all 3s;
+    background: linear-gradient(to left,rgb(81, 255, 0),rgb(255, 0, 76));
+    opacity: 0;
+}
+.contentR{
+    transform: translateY(-101%);
+    transition: all 3s;
+   background: linear-gradient(to left,rgb(0, 255, 255),rgb(0, 0, 250));
+   opacity: 0;
+}
+.poems:hover .contentL{
+    transform: translate(-100%,-101%);
+    opacity: 1;
+}
+
+.poems:hover .contentR{
+    transform: translate(100%,-101%);
+    opacity: 1;
+}
+.header{
+    transform: translateY(-20%);
+}
+.contentT{
+    transform: translateY(-101%);
+    transition: all 3s;
+    opacity: 0;
+    color: white;
+    background: linear-gradient(to left,rgb(116, 19, 19),rgb(7, 7, 71));
+}
+.poems:hover .contentT{
+    transform: translateY(-201%);
+    opacity: 1;
+}

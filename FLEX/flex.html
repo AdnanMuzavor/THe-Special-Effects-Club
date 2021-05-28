@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 0 20px 30px 0;
+        line-height: 1.4;
+      }
+      .flex-container .flex-item .inner {
+          display: flex;
+      }
+      .flex-container .flex-item {
+        width: 480px;
+        height: 200px;
+        background-color: rgb(255, 166, 0);
+        border: 4px solid rgb(255, 255, 255);
+        text-align: left;
+        font-size: 20px;
+        color: mediumpurple;
+        font-weight: bold;
+        line-height: 1.4;
+      }
+     
+
+      .flex-container .flex-item .inner .Iflex-item {
+        border: 4px solid rgb(255, 166, 0);
+        width: 150px;
+
+        background-color: rgb(4, 0, 255);
+        color: yellow;
+        display: flex;
+      }
+     
+      .flex-container .hero .inner {
+      display: flex;
+      
+      flex-wrap: wrap;
+      }
+      .flex-container .special1{
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .flex-container .special2{
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .special1 .flex-item {
+        width: 290px;
+        height: 30px;
+      }
+      .special2 .flex-item{
+        width: 360px;
+        height: 30px;
+      }
+      .flex-container .hero {
+      display: flex;
+      
+      flex-wrap: wrap;
+      }
+      .flex-container .hero .flex-item .inner {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+        <div class="hero">
+      <div class="flex-item" id="flex-item-1">
+        1
+
+        <div class="inner">
+          <div class="inner1">
+            <div class="Iflex-item" id="Iflex-item-4">4</div>
+            <div class="Iflex-item" id="Iflex-item-5">5</div>
+            <div class="Iflex-item" id="Iflex-item-6">6</div>
+            <br>
+          </div>
+        
+          <div class="inner2">
+            <div class="Iflex-item" id="Iflex-item-7">7</div>
+            <div class="Iflex-item" id="Iflex-item-8">8</div>
+            <div class="Iflex-item" id="Iflex-item-9">9</div>
+            <br>
+          </div>
+     
+          <div class="inner3">
+            <div class="Iflex-item" id="Iflex-item-10">10</div>
+            <div class="Iflex-item" id="Iflex-item-11">11</div>
+            <div class="Iflex-item" id="Iflex-item-12">12</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-item" id="flex-item-2">2</div>
+      <div class="flex-item" id="flex-item-3">3</div>
+    </div>
+     
+      <div class="special1">
+        <div class="flex-item" id="flex-item-4">4</div>
+        <div class="flex-item" id="flex-item-5">5</div>
+        <div class="flex-item" id="flex-item-6">6</div>
+        <div class="flex-item" id="flex-item-7">7</div>
+        <div class="flex-item" id="flex-item-8">8</div>
+    </div>
+       
+        <div class="special2">
+        <div class="flex-item" id="flex-item-9">9</div>
+        <div class="flex-item" id="flex-item-10">10</div>
+        <div class="flex-item" id="flex-item-11">11</div>
+        <div class="flex-item" id="flex-item-12">12</div>
+      </div>
+    </div>
+  </body>
+</html>

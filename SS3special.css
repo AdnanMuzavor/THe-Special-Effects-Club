@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left,rgb(199, 62, 62),rgb(4, 0, 255));
+}
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container .image-class img{
+
+    width: 500px;
+    height: 300px;
+}
+.image-class{
+    width: 500px;
+    height: 300px;
+    border: 2px solid red;
+   
+}
+.content{
+text-align: center;
+color: darkred;
+width: 450px;
+height: 250px;
+background: linear-gradient(to right,#ff234b,#f526b7);
+transform: translate(5%,-228%);
+opacity: 0;
+
+}
+
+
+.content2{
+    width: 500px;
+    height: 300px;
+    transform: translate(0%,-101.5%);
+    background: linear-gradient(to right,#f8b600,#f102aa);
+    transition: all 0.3s;
+    opacity: 0;
+}
+ .content:hover {
+    opacity: 0.8;
+    transition: all 2s;
+    animation-name: hii2;
+    
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+@keyframes hii2 {
+    from{
+       
+        background: linear-gradient(to right,#ff234b,#f526b7);
+    }
+    to{
+        background:linear-gradient(to left,#f8b600,#f102aa);
+    }
+}
+
+
+.image-class:hover .content2 {
+    opacity: 0.9;
+    transition:all 2s;
+    animation-name: hii;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+@keyframes hii {
+    from{
+        background:linear-gradient(to right,#f8b600,#f102aa);
+    }
+    to{
+        background: linear-gradient(to right,#ff234b,#f526b7);
+    }
+}
